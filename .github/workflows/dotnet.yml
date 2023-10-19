@@ -23,7 +23,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore --nologo -c Release -o build --self-contained true
+      run: dotnet build --no-restore --nologo -c Release --self-contained true
     - name: Upload dotnet test results
       uses: actions/upload-artifact@v3
       with:
